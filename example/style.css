@@ -1,0 +1,66 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  color: #doe3ff; /* warna */
+}
+
+h1 {
+  font-style: italic;
+  color: #081f5c;
+}
+
+video {
+  display: block;
+  width: 100%; /* Sesuaikan dengan lebar video */
+}
+.hidden {
+    display: none;
+}
+
+#brightnessControls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#brightnessControls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#brightnessControls button img {
+  width: 20px;
+}
+
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.removed {
+  display: none;
+}
+
+.invisible {
+  opacity: 0.2;
+}
+
+.highlighter {
+  background: rgba(0, 255, 0, 0.25); /* Warna highlight untuk wajah senang */
+  border: 2px dashed #fff;
+  z-index: 1;
+  position: absolute;
+  pointer-events: auto; /* prediksi wajah */
+}
+
+#liveView p {
+  position: absolute;
+  background: rgba(255, 111, 0, 0.85); /* Warna latar belakang untuk teks hasil prediksi */
+  color: #fffff; /* Warna teks untuk teks hasil prediksi */
+  padding: 5px;
+  margin: 0;
+  font-size: 14px;
+  pointer-events: auto; /* prediksi wajah */
+}

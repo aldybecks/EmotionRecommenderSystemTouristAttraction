@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Emotion Recommender System Tourist Attraction</title>
+    <meta charset="utf-8">
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Emotion Recommender System Tourist Attraction</h1>
+
+    <section id="demos" class="invisible">
+
+        <p>Dekatkan wajah ke camera Anda untuk mendapatkan rekomendasi wisata! Jika sudah siap klik "aktifkan camera"
+            di bawah dan terima akses ke camera saat browser meminta (periksa kiri atas jendela Anda)</p>
+        <div id="liveView" class="camView">
+            <button id="webcamButton">Aktifkan Camera</button>
+            <video id="webcam" autoplay muted width="640" height="480"></video>
+        </div>
+
+    </section>
+    <!-- Import TensorFlow.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+    <!-- Input the coco-ssd model untuk digunakan mendeteksi wajah -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd/dist/versions/2.0.0/coco-ssd.min.js"></script>
+
+    <!-- Import scriptjs yg udh dibuat -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
